@@ -3,9 +3,17 @@ Rails.application.routes.draw do
   post "login", to: 'sessions#create'
   delete "logout", to: 'sessions#destroy'
 
-  root "tops#index"
+  #root "tops#index"
+  root "gods#index"
   get "signup", to: "admins#new"
   resources :admins
+
+  resources :gods, only: [:index] do
+    collection {post :upload}
+  end
+  
+  post "gods_show", to: "gods#show"
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

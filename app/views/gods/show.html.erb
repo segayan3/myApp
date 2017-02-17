@@ -1,0 +1,13 @@
+<h1>アップロードしたデータ</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <% @gods.each do |god| %>
+      <tr>
+        <td><%= god.id %></td>
+        <td><%= god.sku %></td>
+        <td><%= god.total %></td>
+      </tr>
+    <% end %>
+  </div>
+</div>
