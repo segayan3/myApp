@@ -14,8 +14,8 @@ class GodsController < ApplicationController
     redirect_to gods_show_path(@results)
   end
   
-  private
-  def god_params
-    params.require(:god).permit(:sku, :total)
-  end
+  #private
+  #def god_params
+  #  params.require(:god).permit(:sku, :total)
+  #end
 end
