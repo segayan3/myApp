@@ -15,6 +15,6 @@ class God < ActiveRecord::Base
   
   # 更新を許可するカラムを定義
   def self.updatable_attributes
-    ["sku", "total"]
+    ["sku", "total", "order_date"]
   end
 end

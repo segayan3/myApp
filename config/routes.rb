@@ -12,7 +12,9 @@ Rails.application.routes.draw do
     collection {post :upload}
   end
   
-  post "gods_show", to: "gods#show"
+  get "god", to: "gods#show"
+  
+  #post "gods", to: "gods#show"
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,4 +1,4 @@
-<%= form_for(@gods) do |f| %>
-  <%= f.file_field :file %>
-  <%= f.submit "アップロード", class: "btn btn-primary" %>
+<%= form_tag upload_gods_path, { multipart: true } do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "アップロード", class: "btn btn-primary" %>
 <% end %>

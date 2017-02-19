@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170217110127) do
+ActiveRecord::Schema.define(version: 20170219122208) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "name"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20170217110127) do
     t.datetime "updated_at", null: false
     t.string   "sku"
     t.integer  "total"
+    t.date     "order_date"
   end
 
 end
